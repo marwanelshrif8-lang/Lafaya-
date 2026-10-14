@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#26382e">
+<title>Lafaya Fashion | شنطتك لكل حتة</title>
+<meta name="description" content="شنط Lafaya Fashion المنسوجة الأنيقة بمقاس 37×30 سم، مع إسكارف هدية وشحن مجاني على العروض.">
+<style>
+:root{--green:#26382e;--green2:#405848;--cream:#f8f2e9;--sand:#eadbc7;--ink:#24231f;--muted:#716c64;--pink:#f3dfe3;--gold:#c7a36a;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Tahoma,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.7}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+.topbar{background:var(--green);color:#fff;text-align:center;padding:8px 12px;font-size:13px}
+header{background:#fff;position:sticky;top:0;z-index:20;border-bottom:1px solid #eee8df}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 0}
+.logo{font-family:Georgia,serif;font-weight:bold;font-size:26px;letter-spacing:1px;color:var(--green);line-height:1}
+.logo small{display:block;font-family:Tahoma,Arial,sans-serif;font-size:10px;letter-spacing:4px;text-align:center;margin-top:5px;color:#92754d}
+.navlinks{display:flex;gap:24px;font-size:14px;color:#4e4a43}.navlinks a:hover{color:#a17b45}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;padding:13px 22px;font-weight:bold;font-size:14px;cursor:pointer;transition:.2s}
+.btn-primary{background:var(--green);color:white}.btn-primary:hover{background:var(--green2);transform:translateY(-1px)}
+.btn-light{background:#fff;color:var(--green);border:1px solid #e5ddd2}
+.hero{background:linear-gradient(120deg,#f8f2e9 0%,#f8f2e9 57%,#eadbc7 57%,#eadbc7 100%);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.03fr .97fr;align-items:center;gap:44px;padding:58px 0 62px}
+.eyebrow{display:inline-block;background:#e7d8c2;color:#725832;border-radius:30px;padding:5px 13px;font-size:12px;font-weight:bold}
+h1{font-size:clamp(32px,4.2vw,54px);line-height:1.25;color:var(--green);margin:16px 0}
+.hero p{font-size:17px;color:#625b51;max-width:520px}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.hero-points{display:flex;gap:18px;flex-wrap:wrap;margin-top:24px;font-size:13px;color:#5b594f}
+.hero-photo{position:relative;max-width:470px;margin:auto}
+.hero-photo img{width:100%;display:block;border-radius:220px 220px 28px 28px;box-shadow:0 20px 45px #5c493024;object-fit:cover;aspect-ratio:4/5}
+.sticker{position:absolute;bottom:22px;left:-16px;background:#fff;border-radius:50%;width:100px;height:100px;display:grid;place-content:center;text-align:center;color:var(--green);font-weight:bold;line-height:1.3;box-shadow:0 8px 25px #0001;transform:rotate(-9deg)}
+.sticker b{font-size:22px}
+.section{padding:68px 0}.section-soft{background:var(--cream)}
+.section-title{text-align:center;margin-bottom:32px}.section-title .eyebrow{margin-bottom:8px}.section-title h2{font-size:clamp(25px,3vw,36px);color:var(--green);margin:6px 0}.section-title p{color:var(--muted);margin:0}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.feature{background:#fff;border:1px solid #eee7dd;border-radius:18px;padding:23px 16px;text-align:center}.feature .icon{font-size:27px}.feature h3{margin:8px 0 4px;color:var(--green);font-size:16px}.feature p{margin:0;font-size:13px;color:var(--muted)}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.product{border:1px solid #eee7df;border-radius:18px;overflow:hidden;background:#fff;transition:.2s}.product:hover{transform:translateY(-4px);box-shadow:0 12px 30px #35291b12}
+.product img{width:100%;aspect-ratio:4/4.5;object-fit:cover;display:block;background:#eee}.product-info{padding:15px 17px}.product-info h3{margin:0;color:var(--green);font-size:17px}.product-info p{margin:4px 0 0;color:var(--muted);font-size:13px}
+.swatches{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:24px}.swatch{display:flex;align-items:center;gap:7px;border:1px solid #e8e1d8;border-radius:99px;padding:7px 12px;font-size:13px;background:#fff}.dot{width:16px;height:16px;border-radius:50%;border:1px solid #0002;display:inline-block}
+.offers{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}
+.offer{background:#fff;border:1px solid #e6ded2;border-radius:20px;padding:27px 22px;text-align:center;position:relative}
+.offer.featured{border:2px solid var(--green);box-shadow:0 14px 35px #26382e15;transform:translateY(-6px)}
+.tag{display:inline-block;border-radius:99px;background:#e8efe8;color:var(--green);font-size:12px;padding:5px 12px;font-weight:bold}
+.offer h3{margin:12px 0 2px;color:var(--green);font-size:19px}.price{font-size:35px;font-weight:bold;color:var(--green);line-height:1.3;margin:9px 0}.price small{font-size:15px;font-weight:normal}.old{font-size:13px;color:#9b948a;text-decoration:line-through}.save{color:#8b6231;font-weight:bold;font-size:13px}.offer ul{list-style:none;padding:0;margin:17px 0;color:#625b51;font-size:14px}.offer li{margin:5px 0}.offer .btn{width:100%}
+.order-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:28px;align-items:start}
+.order-note{background:var(--green);color:#fff;border-radius:20px;padding:28px}.order-note h3{font-size:24px;margin:0 0 10px}.order-note p{color:#e2e7e2;font-size:14px}.order-note li{margin:8px 0;font-size:14px}
+form{background:#fff;border:1px solid #e8e0d6;border-radius:20px;padding:26px}
+form h3{margin:0 0 18px;color:var(--green);font-size:22px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}label{font-size:13px;font-weight:bold;color:#514d45}input,select,textarea{font:inherit;border:1px solid #ded7cd;border-radius:10px;padding:12px;background:#fff;outline:none;width:100%;color:var(--ink)}input:focus,select:focus,textarea:focus{border-color:var(--green)}textarea{min-height:75px;resize:vertical}.hint{font-size:12px;color:var(--muted);margin-top:3px}.form-total{background:var(--cream);padding:13px 15px;border-radius:12px;display:flex;justify-content:space-between;align-items:center;margin:16px 0;font-weight:bold;color:var(--green)}.form-total strong{font-size:23px}
+footer{background:#1e2b23;color:#fff;padding:32px 0}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-inner p{margin:4px 0;color:#d1d8d1;font-size:13px}.footer-logo{color:#fff}
+.toast{display:none;margin-top:12px;padding:12px;border-radius:10px;background:#fff0df;color:#7a4b17;font-size:13px}
+@media(max-width:800px){.navlinks{display:none}.hero-grid{grid-template-columns:1fr;gap:30px;padding:40px 0}.hero-copy{text-align:center}.hero p{margin-inline:auto}.hero-actions,.hero-points{justify-content:center}.hero-photo{max-width:360px}.features{grid-template-columns:repeat(2,1fr)}.products{grid-template-columns:repeat(2,1fr);gap:12px}.product-info{padding:12px}.offers{grid-template-columns:1fr;max-width:460px;margin:auto;gap:14px}.offer.featured{transform:none}.order-layout{grid-template-columns:1fr}.section{padding:50px 0}}
+@media(max-width:460px){.logo{font-size:22px}.nav .btn{padding:10px 13px;font-size:12px}.products{grid-template-columns:1fr 1fr}.product-info h3{font-size:14px}.product-info p{font-size:12px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.sticker{width:82px;height:82px;left:-4px}.sticker b{font-size:18px}}
+</style>
+</head>
+<body>
+<div class="topbar">🚚 الشحن مجانًا مع أي عرض — لفترة محدودة لمدة يومين فقط!</div>
+<header>
+  <div class="wrap nav">
+    <a href="#" class="logo">LAFAYA <small>FASHION</small></a>
+    <nav class="navlinks"><a href="#products">الألوان</a><a href="#offers">العروض</a><a href="#details">تفاصيل الشنطة</a><a href="#order">اطلبي الآن</a></nav>
+    <a class="btn btn-primary" href="#order">اطلبي شنطتك 👜</a>
+  </div>
+</header>
+<main>
+<section class="hero">
+ <div class="wrap hero-grid">
+  <div class="hero-copy">
+   <span class="eyebrow">ستايل عملي بلمسة أنيقة ✨</span>
+   <h1>شنطة واحدة…<br>وتظبط معاكي في كل حتة!</h1>
+   <p>للجامعة 🎓 والشغل 💼 والخروجات ✨ — شنطة واسعة وعملية بتصميم منسوج أنيق، ومعاها إسكارف هدية يكمّل لوكك.</p>
+   <div class="hero-actions"><a class="btn btn-primary" href="#offers">شوفي العروض والأسعار</a><a class="btn btn-light" href="#products">اختاري لونك</a></div>
+   <div class="hero-points"><span>✓ مقاس 37 × 30 سم</span><span>✓ قفل كبسولة</span><span>✓ معاينة قبل الاستلام</span></div>
+  </div>
+  <div class="hero-photo">
+   <img src="images/black.jpg" alt="شنطة لافايا فاشون باللون الأسود مع إسكارف">
+   <div class="sticker"><b>إسكارف</b>هدية 🎀</div>
+  </div>
+ </div>
+</section>
+<section class="section" id="details">
+ <div class="wrap">
+  <div class="section-title"><span class="eyebrow">تفاصيل بتحبيها</span><h2>عملية وأنيقة في نفس الوقت</h2><p>اختيار مناسب ليومك من أول الصبح لآخر المشوار.</p></div>
+  <div class="features">
+   <div class="feature"><div class="icon">👜</div><h3>مساحة واسعة</h3><p>مقاس 37 × 30 سم للاستخدام اليومي.</p></div>
+   <div class="feature"><div class="icon">🎀</div><h3>إسكارف هدية</h3><p>لمسة مميزة مع كل شنطة.</p></div>
+   <div class="feature"><div class="icon">🔒</div><h3>قفل كبسولة</h3><p>تصميم سهل وعملي للاستخدام.</p></div>
+   <div class="feature"><div class="icon">🚚</div><h3>شحن مجاني</h3><p>مع أي عرض خلال فترة العرض.</p></div>
+  </div>
+ </div>
+</section>
+<section class="section section-soft" id="products">
+ <div class="wrap">
+  <div class="section-title"><span class="eyebrow">اختاري الستايل اللي شبهك</span><h2>ألوان Lafaya Fashion</h2><p>اختاري لون واحد أو نسّقي أكتر من لون مع عروض التوفير.</p></div>
+  <div class="products">
+   <article class="product"><img src="images/black.jpg" alt="شنطة سوداء"><div class="product-info"><h3>أسود 🖤</h3><p>كلاسيكي ويمشي مع كل حاجة</p></div></article>
+   <article class="product"><img src="images/burgundy.jpg" alt="شنطة برجاندي"><div class="product-info"><h3>برجاندي 🍷</h3><p>لون غني ولافت</p></div></article>
+   <article class="product"><img src="images/brown.jpg" alt="شنطة بني"><div class="product-info"><h3>بني 🤎</h3><p>دافئ وشيك</p></div></article>
+   <article class="product"><img src="images/white.jpg" alt="شنطة بيضاء"><div class="product-info"><h3>أبيض 🤍</h3><p>ناعم ومنعش</p></div></article>
+   <article class="product"><img src="images/beige.jpg" alt="شنطة بيج"><div class="product-info"><h3>بيج ✨</h3><p>هادئ وسهل التنسيق</p></div></article>
+   <article class="product"><img src="images/pink.jpg" alt="شنطة بينك"><div class="product-info"><h3>بينك 🌸</h3><p>لمسة رقيقة ومبهجة</p></div></article>
+   <article class="product"><img src="images/green.jpg" alt="شنطة أخضر"><div class="product-info"><h3>زيتي 🫒</h3><p>مميز ومختلف</p></div></article>
+   <article class="product"><div style="aspect-ratio:4/4.5;background:#c59a6c;display:grid;place-items:center;font-size:75px">🤎</div><div class="product-info"><h3>هافان 🤎</h3><p>درجة بنية فاتحة أنيقة</p></div></article>
+  </div>
+ </div>
+</section>
+<section class="section" id="offers">
+ <div class="wrap">
+  <div class="section-title"><span class="eyebrow">اختاري عرضك ووَفّري أكتر</span><h2>عروض خاصة ليكي 💝</h2><p>كل العروض تشمل الشحن المجاني خلال مدة العرض.</p></div>
+  <div class="offers">
+   <article class="offer"><span class="tag">اختيارك البسيط</span><h3>العرض الأول</h3><div class="price">299 <small>جنيه</small></div><ul><li>👜 شنطة واحدة</li><li>🎀 إسكارف هدية</li><li>🚚 شحن مجاني</li></ul><a href="#order" class="btn btn-light" data-bundle="1">اختاري العرض</a></article>
+   <article class="offer featured"><span class="tag">⭐ الأكثر طلبًا</span><h3>عرض الصحاب والتوفير</h3><div class="price">520 <small>جنيه</small></div><div class="old">بدلًا من 600 جنيه</div><div class="save">وفّري 80 جنيه 💰</div><ul><li>👜 شنطتين بلونين من اختيارك</li><li>🎀 إسكارف هدية مع كل شنطة</li><li>🚚 شحن مجاني</li></ul><a href="#order" class="btn btn-primary" data-bundle="2">اختاري العرض</a></article>
+   <article class="offer"><span class="tag">تجديد أكتر</span><h3>العرض الثلاثي</h3><div class="price">750 <small>جنيه</small></div><div class="old">بدلًا من 900 جنيه</div><div class="save">وفّري 150 جنيه 💰</div><ul><li>👜 3 شنط بألوان مختلفة أو متشابهة</li><li>🎀 إسكارف هدية مع كل شنطة</li><li>🚚 شحن مجاني</li></ul><a href="#order" class="btn btn-light" data-bundle="3">اختاري العرض</a></article>
+  </div>
+ </div>
+</section>
+<section class="section section-soft" id="order">
+ <div class="wrap">
+  <div class="section-title"><span class="eyebrow">خطوة واحدة وتطلبيها</span><h2>اطلبي شنطتك دلوقتي 🛍️</h2><p>املّي بياناتك واختاري الألوان، وهيتجهزلك طلب على واتساب لتأكيد التفاصيل.</p></div>
+  <div class="order-layout">
+   <aside class="order-note"><h3>قبل ما تطلبي 💌</h3><p>اختاري العرض والألوان اللي بتحبيها، وفريق Lafaya Fashion هيأكدلك توافر اللون قبل تأكيد الطلب.</p><ul><li>✓ المعاينة متاحة قبل الاستلام.</li><li>✓ تقدري تختاري أكتر من لون.</li><li>✓ الشحن مجاني مع العروض خلال مدة العرض.</li><li>✓ المقاس: 37 × 30 سم.</li></ul></aside>
+   <form id="orderForm">
+    <h3>بيانات الطلب</h3>
+    <div class="form-grid">
+     <div class="field"><label for="name">الاسم بالكامل *</label><input id="name" required placeholder="اكتبي اسمك"></div>
+     <div class="field"><label for="phone">رقم الموبايل *</label><input id="phone" required inputmode="tel" placeholder="01xxxxxxxxx"></div>
+     <div class="field full"><label for="bundle">اختاري العرض *</label><select id="bundle" required><option value="1">شنطة واحدة — 299 جنيه</option><option value="2" selected>شنطتين — 520 جنيه (وفّري 80 جنيه)</option><option value="3">3 شنط — 750 جنيه (وفّري 150 جنيه)</option></select></div>
+     <div class="field full"><label>اختاري لون كل شنطة *</label><div id="colorFields"></div><div class="hint">اختاري لونًا لكل شنطة في العرض.</div></div>
+     <div class="field full"><label for="address">العنوان بالتفصيل *</label><textarea id="address" required placeholder="المحافظة، المنطقة، الشارع، رقم العمارة والشقة"></textarea></div>
+     <div class="field full"><label for="notes">ملاحظات (اختياري)</label><textarea id="notes" placeholder="أي تفاصيل إضافية للطلب"></textarea></div>
+    </div>
+    <div class="form-total"><span>إجمالي الطلب (الشحن مجاني)</span><strong id="total">520 جنيه</strong></div>
+    <button class="btn btn-primary" type="submit" style="width:100%">إرسال الطلب على واتساب 💬</button>
+    <div class="hint">مهم: لازم صاحب البراند يضيف رقم واتساب الطلبات في إعدادات الموقع قبل نشره.</div>
+    <div class="toast" id="toast"></div>
+   </form>
+  </div>
+ </div>
+</section>
+</main>
+<footer><div class="wrap footer-inner"><div><a href="#" class="logo footer-logo">LAFAYA <small>FASHION</small></a><p>شنطتك لكل حتة، بأناقة وراحة.</p></div><p>© <span id="year"></span> Lafaya Fashion — جميع الحقوق محفوظة</p></div></footer>
+<script>
+// استبدل الرقم التالي برقم واتساب البراند مع كود مصر 20، بدون + أو مسافات.
+const WHATSAPP_NUMBER = "201005034174";
+const prices = {"1":299,"2":520,"3":750};
+const colors = ["أسود 🖤","أبيض 🤍","برجاندي 🍷","بينك 🌸","بني 🤎","بيج ✨","زيتي 🫒","هافان 🤎"];
+const bundle = document.getElementById("bundle");
+const colorFields = document.getElementById("colorFields");
+const total = document.getElementById("total");
+function renderColorFields(){
+  const count = Number(bundle.value);
+  colorFields.innerHTML = "";
+  for(let i=0;i<count;i++){
+    const label = document.createElement("label");
+    label.textContent = "لون الشنطة " + (i+1);
+    label.style.display = "block"; label.style.margin = "9px 0 5px";
+    const select = document.createElement("select");
+    select.required = true; select.className = "color-choice";
+    select.innerHTML = '<option value="">اختاري اللون</option>' + colors.map(c=>`<option value="${c}">${c}</option>`).join("");
+    colorFields.append(label,select);
+  }
+  total.textContent = prices[bundle.value] + " جنيه";
+}
+bundle.addEventListener("change",renderColorFields);
+document.querySelectorAll("[data-bundle]").forEach(btn=>btn.addEventListener("click",()=>{bundle.value=btn.dataset.bundle;renderColorFields()}));
+document.getElementById("year").textContent = new Date().getFullYear();
+renderColorFields();
+document.getElementById("orderForm").addEventListener("submit",function(e){
+ e.preventDefault();
+ const name=document.getElementById("name").value.trim();
+ const phone=document.getElementById("phone").value.trim();
+ const address=document.getElementById("address").value.trim();
+ const selected=[...document.querySelectorAll(".color-choice")].map((s,i)=>`لون الشنطة ${i+1}: ${s.value}`).join("\n");
+ const notes=document.getElementById("notes").value.trim();
+ if(!name||!phone||!address||[...document.querySelectorAll(".color-choice")].some(s=>!s.value)){return}
+ if(WHATSAPP_NUMBER==="201000000000"){
+   const toast=document.getElementById("toast");
+   toast.style.display="block";
+   toast.textContent="الموقع جاهز للتجربة، لكن لازم تغيّر رقم واتساب التجريبي في ملف index.html إلى رقم البراند قبل استقبال الطلبات.";
+   return;
+ }
+ const message=`طلب جديد من موقع Lafaya Fashion 👜\nالاسم: ${name}\nرقم الموبايل: ${phone}\nالعرض: ${bundle.value} شنطة\n${selected}\nالعنوان: ${address}\nملاحظات: ${notes||"لا يوجد"}\nالإجمالي: ${prices[bundle.value]} جنيه — الشحن مجاني`;
+ window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`,"_blank");
+});
+</script>
+</body>
+</html>
